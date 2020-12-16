@@ -1,5 +1,5 @@
 <template>
-  <div class="card" style="width: 24rem; background-color: beige; margin: 25px">
+  <div class="card" style="width: 25rem; background-color: beige; margin: 25px">
     <div class="card-body">
       <h1 class="card-title">10'u Geçme!</h1>
       <p>{{ counter }}</p>

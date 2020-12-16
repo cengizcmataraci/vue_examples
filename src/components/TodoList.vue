@@ -10,7 +10,7 @@
       <button class="btn btn-success" @click="addText" style="margin: 15px">
         Ekle
       </button>
-      <button class="btn btn-danger" :class="disable" @click="deleteAll">Hepsini Sil</button>
+      <button class="btn btn-danger" v-if="yeni.length" @click="deleteAll">Hepsini Sil</button>
     </div>
     <ol>
       <li v-for="(den, index) in yeni" :key="index" class="list-item">
@@ -74,11 +74,6 @@ export default {
     },
   },
   computed: {
-    disable() {
-      return {
-        "disabled" : this.yeni === "",
-      };
-    },
   },
 };
 </script>
