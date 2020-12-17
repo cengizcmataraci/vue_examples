@@ -17,12 +17,14 @@
       <p v-if="counter > 10" class="dangertext" :class="bgc">
         <strong>Asla laf anlamıyorsun!</strong>
       </p>
+      <p><button class="btn btn-primary" @click="myFunction">{{ postTitle }}</button></p>
     </div>
   </div>
 </template>
 
 <script>
 export default {
+  props: ['postTitle'],
   data() {
     return {
       counter: 0,
@@ -35,6 +37,11 @@ export default {
     },
     lowerNumber() {
       this.counter--;
+    },
+    myFunction() {
+      setTimeout(() => {
+        alert(this.postTitle);
+      }, 3000);
     },
   },
   computed: {

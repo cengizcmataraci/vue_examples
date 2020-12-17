@@ -1,7 +1,7 @@
 <template>
   <div id="practice" class="col d-flex justify-content-center ust">
-    <todoList />
-    <counter />
+    <todoList  />
+    <counter post-title="Tıkla" />
   </div>
 </template>
 
